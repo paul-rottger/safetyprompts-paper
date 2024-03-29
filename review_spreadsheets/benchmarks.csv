@@ -1,0 +1,16 @@
+benchmark_name,publication_date,publication_org,publication_url,leaderboard_url,data_url,publication_notes,RealToxicity,BOLD,CrowSPairs,BBQ,Winogender,TruthfulQA,Winobias,Toxigen,AnthropicHarmlessBase,AnthropicRedTeam,ModelWrittenEvals,WMDP,ETHICS,JiminyCricket,PersonalInfoLeak,XSTest,DoNotAnswer,STEREOSET,SOCIAL CHEMISTRY 101,MORALCHOICE,Dataset Notes
+Eleuther AI Evaluation Harness,2023,EleutherAI,not available,not available,https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks,Backend for OpenLLM leaderboard,1,0,1,0,0,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,
+BIG-Bench,2023,Academic collaboration,https://arxiv.org/pdf/2206.04615.pdf,not available,https://github.com/google/BIG-bench/tree/main/bigbench/benchmark_tasks,,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,"- In general introudces a lot of original datasets.
+- Disambiguation_QA task takes examples that are ""adapted"" from WinoBias and WinoGender.
+- Data for several tasks have been created manually by authors.
+- For diverse_social_bias authors collect data from WikiText-2, SST, Reddit, MELD, Hacker News, Yelp.
+- unqover uses manually selected prompts from StereoSet. Also uses data from Wikipedia."
+HELM Classic,2022,Stanford,https://arxiv.org/abs/2211.09110,https://crfm.stanford.edu/helm/classic/latest/#/leaderboard,https://github.com/stanford-crfm/helm,,1,1,0,1,0,1,0,0,0**,0**,0,0,0**,0**,0**,0,0,0,0,0,"- Uses data from BigBench (see helm/src/helm/benchmark/scenarios
+/big_bench_scenario.py in the repo)
+- **Also uses data from DecodingTrust (LLM Safety Leaderbboard) in the following areas: Fairness, Ethics, Privacy, Stereotypes, Bias, Toxicity. Some of the data here are written by the DecodingTrust authors, while some other data comes from public dataset (e.g. ETHICS, PersonalInfoLeak)."
+HELM Instruct,02/2024,Stanford,https://crfm.stanford.edu/2024/02/18/helm-instruct.html,https://crfm.stanford.edu/helm/instruct/latest/,https://github.com/stanford-crfm/helm,,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,
+OpenLLM leaderboard,,Hugging Face,not available,https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard,https://github.com/EleutherAI/lm-evaluation-harness/tree/main/lm_eval/tasks,covers 6 tasks taken from Evaluation Harness,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+TrustLLM Benchmark,2024,Academic collaboration,https://arxiv.org/pdf/2401.05561.pdf,https://github.com/HowieHwong/TrustLLM,https://github.com/HowieHwong/TrustLLM, ,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,1,1,1,1,1,- Introduces several new datasets
+LLM Safety Leaderboard,2024,Academic collaboration,https://arxiv.org/abs//2306.11698,https://huggingface.co/spaces/AI-Secure/llm-trustworthy-leaderboard,https://github.com/AI-secure/DecodingTrust,,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,"- For most tasks, the authors propose custom prompts (for instance, it adopts 16 stereotype categories).
+- Regarding Machine ethics: the Jiminy Cricket dataset is used (originally designed to evaluate an agent’s ability to act morally in text-based games)."
+,,,,,,,3,1,2,2,1,5,1,1,1,1,1,1,3,1,1,1,1,2,1,1,
